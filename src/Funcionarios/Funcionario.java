@@ -9,6 +9,7 @@ package Funcionarios;
  * @author UTN
  */
 public class Funcionario extends Personas {
+    //clase personas,no es abstracta 
     private String departamento;
 
     public String getDepartamento() {
