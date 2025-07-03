@@ -4,12 +4,13 @@
  */
 package Funcionarios;
 
+import Personas.Persona;
+
 /**
  *
  * @author UTN
  */
-public class Funcionario extends Personas {
-    //clase personas,no es abstracta 
+public class Funcionario extends Persona {
     private String departamento;
 
     public String getDepartamento() {
@@ -18,6 +19,16 @@ public class Funcionario extends Personas {
 
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
+    }
+
+    public Funcionario(String departamento, String cedula, String nombre) {
+        super(cedula, nombre);
+        this.departamento = departamento;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" + "departamento=" + departamento + '}';
     }
     
     
