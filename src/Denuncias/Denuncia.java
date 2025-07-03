@@ -13,7 +13,7 @@ public class Denuncia {
    private String descripcion;
    private String provincia ;
    private String canton;
-
+   
     public String getCodigo() {
         return codigo;
     }
@@ -43,6 +43,13 @@ public class Denuncia {
     }
 
     public void setCanton(String canton) {
+        this.canton = canton;
+    }
+
+    public Denuncia(String codigo, String descripcion, String provincia, String canton) {
+        this.codigo = codigo;
+        this.descripcion = descripcion;
+        this.provincia = provincia;
         this.canton = canton;
     }
    
